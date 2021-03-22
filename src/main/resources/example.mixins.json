@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "meteordevelopment.addons.example.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
