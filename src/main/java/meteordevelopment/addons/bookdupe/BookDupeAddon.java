@@ -2,7 +2,7 @@ package meteordevelopment.addons.bookdupe;
 
 import minegame159.meteorclient.MeteorAddon;
 import minegame159.meteorclient.MeteorClient;
-import minegame159.meteorclient.commands.Commands;
+import minegame159.meteorclient.systems.commands.Commands;
 
 public class BookDupeAddon extends MeteorAddon {
 
