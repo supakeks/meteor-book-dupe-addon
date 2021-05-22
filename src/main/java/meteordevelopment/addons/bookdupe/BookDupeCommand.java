@@ -46,7 +46,7 @@ public class BookDupeCommand extends Command {
     @Override
     public void build(LiteralArgumentBuilder<CommandSource> builder) {
         builder.executes(context -> {
-            if (InvUtils.getHand(Items.WRITABLE_BOOK) != Hand.MAIN_HAND) ChatUtils.prefixError("BOOK DUPE", "No book found, you must be holding a writable book!");
+            if (InvUtils.getHand(Items.WRITABLE_BOOK) != Hand.MAIN_HAND) error("BOOK DUPE", "No book found, you must be holding a writable book!");
             else mc.player.networkHandler.sendPacket(new BookUpdateC2SPacket(DUPE_BOOK, true, mc.player.inventory.selectedSlot));
 
             return SINGLE_SUCCESS;
